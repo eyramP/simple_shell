@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * without_comment - deletes comments from the input
+ * without_comment - this function deletes comments from the input
  *
  * @in: input string
+ *
  * Return: input without comments
  */
+
 char *without_comment(char *in)
 {
 	int i, up_to;
@@ -36,11 +38,13 @@ char *without_comment(char *in)
 }
 
 /**
- * shell_loop - Loop of shell
+ * shell_loop - function that loop of shell
+ *
  * @datash: data relevant (av, input, args)
  *
  * Return: no return.
  */
+
 void shell_loop(data_shell *datash)
 {
 	int loop, i_eof;

@@ -4,8 +4,10 @@
  * free_data - function that frees data structure
  *
  * @datash: data structure
- * Return: no return
+ *
+ * Return: nothing
  */
+
 void free_data(data_shell *datash)
 {
 	unsigned int i;
@@ -24,8 +26,10 @@ void free_data(data_shell *datash)
  *
  * @datash: data structure
  * @av: argument vector
+ *
  * Return: nothing
  */
+
 void set_data(data_shell *datash, char **av)
 {
 	unsigned int i;
@@ -51,13 +55,14 @@ void set_data(data_shell *datash, char **av)
 }
 
 /**
- * main - Entry point
+ * main - Entry point function
  *
  * @ac: argument count
  * @av: argument vector
  *
  * Return: 0 on success.
  */
+
 int main(int ac, char **av)
 {
 	data_shell datash;

@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * check_env - checks if the typed variable is an env variable
+ * check_env - function checks if the typed variable is an env variable
  *
  * @h: head of linked list
  * @in: input string
  * @data: data structure
- * Return: no return
+ *
+ * Return: nothing
  */
+
 void check_env(r_var **h, char *in, data_shell *data)
 {
 	int row, chr, j, lval;
@@ -42,14 +44,16 @@ void check_env(r_var **h, char *in, data_shell *data)
 }
 
 /**
- * check_vars - check if the typed variable is $$ or $?
+ * check_vars - function check if the typed variable is $$ or $?
  *
  * @h: head of the linked list
  * @in: input string
  * @st: last status of the Shell
  * @data: data structure
- * Return: no return
+ *
+ * Return: nothing
  */
+
 int check_vars(r_var **h, char *in, char *st, data_shell *data)
 {
 	int i, lst, lpd;
@@ -84,14 +88,16 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 }
 
 /**
- * replaced_input - replaces string into variables
+ * replaced_input - function replaces string into variables
  *
  * @head: head of the linked list
  * @input: input string
  * @new_input: new input string (replaced)
  * @nlen: new length
+ *
  * Return: replaced string
  */
+
 char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 {
 	r_var *indx;
@@ -140,8 +146,10 @@ char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
  *
  * @input: input string
  * @datash: data structure
+ *
  * Return: replaced string
  */
+
 char *rep_var(char *input, data_shell *datash)
 {
 	r_var *head, *indx;
