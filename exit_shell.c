@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * exit_shell - exits the shell
+ * exit_shell - function exits the shell
  *
  * @datash: data relevant (status and args)
+ *
  * Return: 0 on success.
  */
+
 int exit_shell(data_shell *datash)
 {
 	unsigned int ustatus;
