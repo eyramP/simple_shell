@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * get_len - Get the lenght of a number.
+ * get_len - function that get the lenght of a number.
+ *
  * @n: type int number.
+ *
  * Return: Lenght of a number.
  */
+
 int get_len(int n)
 {
 	unsigned int n1;
@@ -27,11 +30,15 @@ int get_len(int n)
 
 	return (lenght);
 }
+
 /**
- * aux_itoa - function converts int to string.
+ * aux_itoa - function that converts int to string.
+ *
  * @n: type int number
+ *
  * Return: String.
  */
+
 char *aux_itoa(int n)
 {
 	unsigned int n1;
@@ -66,10 +73,13 @@ char *aux_itoa(int n)
 }
 
 /**
- * _atoi - converts a string to an integer.
+ * _atoi - function that converts a string to an integer.
+ *
  * @s: input string.
+ *
  * Return: integer.
  */
+
 int _atoi(char *s)
 {
 	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
