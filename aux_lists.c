@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
- * add_sep_node_end - adds a separator found at the end
- * of a sep_list.
+ * add_sep_node_end - a function that adds a
+ * separator found at the end of a sep_list.
+ *
  * @head: head of the linked list.
  * @sep: separator found (; | &).
+ *
  * Return: address of the head.
  */
+
 sep_list *add_sep_node_end(sep_list **head, char sep)
 {
 	sep_list *new, *temp;
@@ -34,10 +37,13 @@ sep_list *add_sep_node_end(sep_list **head, char sep)
 }
 
 /**
- * free_sep_list - frees a sep_list
+ * free_sep_list - function frees a sep_list
+ *
  * @head: head of the linked list.
- * Return: no return.
+ *
+ * Return: nothing.
  */
+
 void free_sep_list(sep_list **head)
 {
 	sep_list *temp;
@@ -56,12 +62,15 @@ void free_sep_list(sep_list **head)
 }
 
 /**
- * add_line_node_end - adds a command line at the end
- * of a line_list.
+ * add_line_node_end - function that adds a
+ * command line at the end of a line_list.
+ *
  * @head: head of the linked list.
  * @line: command line.
+ *
  * Return: address of the head.
  */
+
 line_list *add_line_node_end(line_list **head, char *line)
 {
 	line_list *new, *temp;
@@ -89,10 +98,13 @@ line_list *add_line_node_end(line_list **head, char *line)
 }
 
 /**
- * free_line_list - frees a line_list
+ * free_line_list - function frees a line_list
+ *
  * @head: head of the linked list.
- * Return: no return.
+ *
+ * Return: nothing
  */
+
 void free_line_list(line_list **head)
 {
 	line_list *temp;
